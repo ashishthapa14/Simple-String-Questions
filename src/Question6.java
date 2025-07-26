@@ -13,8 +13,8 @@ public class Question6 {
             String str2 = scanner.nextLine();
 
             // Clean the strings by removing whitespace and converting to lower case
-            String cleanedStr1 = str1.replaceAll("\s", "").toLowerCase();
-            String cleanedStr2 = str2.replaceAll("\s", "").toLowerCase();
+            String cleanedStr1 = str1.replaceAll("\\s", "").toLowerCase();
+            String cleanedStr2 = str2.replaceAll("\\s", "").toLowerCase();
 
             if (areAnagrams(cleanedStr1, cleanedStr2)) {
                 System.out.println(" " + str1 + " and " + str2 + " are anagrams.");
